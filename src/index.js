@@ -1,14 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+//CSS
 import './index.css';
-import App from './App';
+//Components
+import Home from './home.js';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+function Wrapper(){
+  return(
+    <main className='wrapper'>
+      <Home/>
+    </main>
+  );
+}
+
+ReactDOM.render(<Wrapper />,document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
